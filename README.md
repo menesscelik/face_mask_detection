@@ -27,11 +27,6 @@ git clone https://github.com/menesscelik/face_mask_detection.git
 cd face_mask_detection
 ```
 
-2. **Install Required Libraries:**
-
-```bash
-pip install -r requirements.txt
-```
 
 If `requirements.txt` is missing, manually install the following:
 
