@@ -1,51 +1,51 @@
 
-# 🧠 Yüz Maskesi Tespiti
+# 🧠 Face Mask Detection
 
-Bu proje, derin öğrenme ve bilgisayarla görme tekniklerini kullanarak, görüntülerdeki kişilerin maske takıp takmadığını tespit etmeyi amaçlamaktadır.
-Model, Keras ve TensorFlow kullanılarak eğitilmiş olup, gerçek zamanlı uygulamalar için uygundur.
-
----
-
-## 📁 Proje Yapısı
-
-Proje aşağıdaki dosya ve klasörleri içermektedir:
-
-- `dataset/` – Eğitim ve test verilerini içeren klasör.
-- `face_detector/` – Yüz tespiti için kullanılan önceden eğitilmiş modeller.
-- `model_training.py` – Maske tespiti modelini eğitmek için kullanılan Python betiği.
-- `mask_detector_model.h5` – Eğitilmiş modelin ağırlıklarını içeren dosya.
-- `gui.py` – Gerçek zamanlı maske tespiti için grafiksel kullanıcı arayüzü.
+This project aims to detect whether individuals in images are wearing face masks using deep learning and computer vision techniques.
+The model is trained using Keras and TensorFlow and is suitable for real-time applications.
 
 ---
 
-## ⚙️ Kurulum
+## 📁 Project Structure
 
-1. **Depoyu Klonlayın:**
+The project includes the following files and directories:
+
+- `dataset/` – Contains training and test data.
+- `face_detector/` – Pre-trained models used for face detection.
+- `model_training.py` – Python script used to train the mask detection model.
+- `mask_detector_model.h5` – File containing the trained model weights.
+- `gui.py` – Graphical user interface for real-time mask detection.
+
+---
+
+## ⚙️ Installation
+
+1. **Clone the Repository:**
 
 ```bash
 git clone https://github.com/menesscelik/face_mask_detection.git
 cd face_mask_detection
 ```
 
-2. **Gerekli Kütüphaneleri Yükleyin:**
+2. **Install Required Libraries:**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Eğer `requirements.txt` yoksa, şunları yükleyin:
+If `requirements.txt` is missing, manually install the following:
 
 ```bash
 pip install tensorflow keras opencv-python
 ```
 
-3. **Modeli Eğitin:**
+3. **Train the Model:**
 
 ```bash
 python model_training.py
 ```
 
-4. **Uygulamayı Başlatın:**
+4. **Run the Application:**
 
 ```bash
 python gui.py
@@ -53,19 +53,19 @@ python gui.py
 
 ---
 
-## 🧪 Test
+## 🧪 Testing
 
-`gui.py` çalıştırıldığında, web kameranızı kullanarak yüzleri tespit edecek ve maske takılıp takılmadığını belirleyecektir.
-
----
-
-## 📌 Notlar
-
-- `face_detector/` klasörü gerekli yüz tespit modellerini içermelidir.
-- `dataset/` klasörü maske takan ve takmayan kişilerin görüntülerini içermelidir.
+Once you run `gui.py`, it will use your webcam to detect faces and determine whether a mask is being worn.
 
 ---
 
-## 📄 Lisans
+## 📌 Notes
 
-Bu proje, MIT Lisansı altında lisanslanmıştır.
+- The `face_detector/` folder should contain the necessary face detection models.
+- The `dataset/` folder should contain images of people with and without masks.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
