@@ -28,7 +28,6 @@ face_mask_detection/
 ├── model_training.py         # Training script for mask detection model
 ├── mask_detector_model.h5    # Trained Keras model
 ├── gui.py                    # Real-time detection interface
-├── requirements.txt          # Project dependencies
 └── README.md
 ```
 
